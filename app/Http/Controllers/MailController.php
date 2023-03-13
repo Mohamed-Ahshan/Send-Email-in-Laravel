@@ -16,7 +16,7 @@ class MailController extends Controller
         $contact_data['email'] = $request->input('email');
         $contact_data['message'] = $request->input('message');
 
-        Mail::to('jvlcodevideos@gmail.com')->send(new ContactFormMail($contact_data));
+        Mail::to('dream2won@gmail.com')->send(new ContactFormMail($contact_data));
 
         return redirect()->back()->withSuccess('Email has been sent!');
     }
